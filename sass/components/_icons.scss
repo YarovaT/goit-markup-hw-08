@@ -1,0 +1,45 @@
+.icon {
+  @extend %icon;
+}
+
+.modal__icon-check {
+  @include animation(transform);
+
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+
+  display: inline-block;
+
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+}
+
+.modal__close-icon {
+  @extend %icon;
+}
+
+.icon-send {
+  @extend %icon;
+
+  margin-left: 10px;
+}
+
+.modal__icon {
+  @extend %icon;
+  @include animation(border);
+
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  transform: translateY(-50%);
+
+  .modal-form__input:focus-within > & {
+    color: $accent-color;
+  }
+}

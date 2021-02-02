@@ -1,0 +1,44 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: $primary-font-size;
+  line-height: $primary-line-height;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+
+  background-color: $primary-background-color;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+// Основной контейнер
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+
+  width: 1200px;
+
+  display: flex;
+
+  &--block {
+    display: block;
+  }
+}
+
+.section {
+  padding: 94px 0px;
+
+  &--top__zero {
+    padding-top: 0;
+  }
+
+  &--theme__light {
+    background-color: $secondary-background-color;
+  }
+}

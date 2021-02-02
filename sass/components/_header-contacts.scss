@@ -1,0 +1,46 @@
+// Список Контактов
+
+.contact-list {
+  @extend %list;
+
+  margin-left: auto;
+  display: flex;
+
+  &__item {
+    margin-left: 50px;
+  }
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+}
+
+.contact-list__link {
+  @include animation(color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  display: flex;
+
+  font-weight: $primary-font-weight;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-list__icon {
+  @extend %icon;
+  @include animation(fill);
+
+  width: 36px;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}

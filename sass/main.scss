@@ -1,0 +1,32 @@
+@import "./utils/normalize";
+
+@import "./utils/variables";
+
+@import "./utils/fonts";
+
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./layout/header-page";
+@import "./layout/nav-site";
+@import "./layout/footer-page";
+
+@import "./components/buttons";
+@import "./components/titles";
+@import "./components/logo";
+@import "./components/header-contacts";
+@import "./components/hero-content";
+@import "./components/features";
+@import "./components/direct";
+@import "./components/team-card";
+@import "./components/social-links";
+@import "./components/icons";
+@import "./components/clients";
+@import "./components/portfolio-cards";
+@import "./components/footer-address";
+@import "./components/email-form";
+@import "./components/join";
+@import "./components/form";

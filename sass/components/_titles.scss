@@ -1,0 +1,23 @@
+.hero-content__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: $primary-background-color;
+
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.subtitle--hidden {
+  @extend %visually-hidden;
+}

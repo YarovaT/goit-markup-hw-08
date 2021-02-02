@@ -1,0 +1,18 @@
+// Присоединяйтесь
+
+.footer-box {
+  margin-top: 12px;
+  margin-left: 70px;
+
+  &__text {
+    margin-bottom: 20px;
+
+    font-weight: $secondary-font-weight;
+    color: $primary-background-color;
+    text-transform: uppercase;
+  }
+
+  &--indent {
+    margin-left: auto;
+  }
+}

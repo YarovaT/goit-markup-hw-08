@@ -1,0 +1,20 @@
+// Логотип сайта
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: $secondary-font-weight;
+  line-height: 1.2;
+
+  &--start {
+    color: $accent-color;
+  }
+
+  &--end {
+    color: $accent-text-color;
+  }
+
+  &--footer-end {
+    color: $primary-background-color;
+  }
+}

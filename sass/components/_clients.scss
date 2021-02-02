@@ -1,0 +1,30 @@
+// Секция Постоянные Клиенты
+
+.clients-list {
+  @extend %list;
+
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %centered;
+    @include animation(color);
+    @include bordered($link-color);
+
+    width: 170px;
+    height: 90px;
+
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

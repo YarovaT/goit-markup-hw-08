@@ -1,0 +1,24 @@
+.address {
+  margin-top: 20px;
+
+  font-style: normal;
+  font-size: $primary-font-size;
+  line-height: $secondary-line-height;
+  color: $primary-background-color;
+
+  &__link {
+    padding-bottom: 9px;
+
+    &:nth-last-child(n) {
+      padding-bottom: 0;
+    }
+
+    & {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__text {
+    padding-bottom: 9px;
+  }
+}

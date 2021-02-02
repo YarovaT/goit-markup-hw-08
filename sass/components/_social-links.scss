@@ -1,0 +1,49 @@
+.social-links {
+  @extend %list;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  &--centering {
+    margin-right: 32px;
+    margin-bottom: 30px;
+    margin-left: 32px;
+  }
+
+  &__name {
+    @extend %centered;
+    @include animation(color);
+    @include animation(background-color);
+
+    width: 44px;
+    height: 44px;
+
+    color: $link-color;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      color: $primary-background-color;
+      background-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    @extend %icon;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__icon--white {
+    color: $primary-background-color;
+  }
+}

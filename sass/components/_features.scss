@@ -1,0 +1,39 @@
+// Секция Особенности
+
+.features-list {
+  @extend %list;
+
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    @extend %centered;
+
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+
+    background-color: $secondary-background-color;
+
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: $primary-font-size;
+    text-transform: uppercase;
+  }
+  &__text {
+    line-height: $secondary-line-height;
+    color: $secondary-text-color;
+  }
+}
