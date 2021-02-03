@@ -366,7 +366,7 @@ summary {
   margin: -1px;
 }
 
-.site-nav, .email-form__button, .select-buttons, .modal__buttton, .menu__button, .hero-box, .features-list__icon, .social-links, .social-links__name, .clients-list__link, .modal-form__field--string {
+.site-nav, .select-buttons, .modal__buttton, .menu__button, .hero-box, .features-list__icon, .social-links, .social-links__name, .clients-list__link, .modal-form__field--string {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,6 +557,16 @@ img {
   background: #2f303a;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-box {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .footer-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -601,6 +611,12 @@ img {
 }
 
 .email-form__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px 28px;
 }
 
@@ -799,11 +815,12 @@ img {
 }
 
 .hero-section {
-  height: 100vh;
+  height: 400px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -895,7 +912,6 @@ img {
 }
 
 .team-card {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -903,6 +919,16 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-card {
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+  }
+  .team-card:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .team-card__name {
@@ -918,10 +944,6 @@ img {
 
 .team-card__img {
   width: 100%;
-}
-
-.social-links {
-  padding-bottom: 24px;
 }
 
 .social-links__name {
@@ -991,14 +1013,26 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -30px;
 }
 
 .clients-list__item {
-  margin-right: 30px;
-}
-
-.clients-list__item:last-child {
-  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(100% / 2);
+      flex-basis: calc(100% / 2);
+  max-width: 210px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .clients-list__link {
@@ -1006,7 +1040,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 90px;
   color: #afb1b8;
 }
@@ -1108,13 +1142,12 @@ img {
 .address {
   margin-top: 20px;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
 }
 
 .address__link {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 }
 
 .address__link:nth-last-child(n) {
@@ -1126,23 +1159,10 @@ img {
 }
 
 .address__text {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 }
 
 /* Форма подписки */
-.email-form {
-  max-width: 570px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .email-form__label {
   font-weight: 700;
   text-transform: uppercase;
@@ -1154,8 +1174,9 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: #2f303a;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1198,20 +1219,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-box {
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
 .footer-box__text {
   margin-bottom: 20px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.footer-box--indent {
-  margin-left: auto;
 }
 
 /* Модальное окно */

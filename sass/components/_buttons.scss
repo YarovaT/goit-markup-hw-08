@@ -4,7 +4,10 @@
 
 .email-form__button {
   @extend %button;
-  @extend %centered;
+  // @extend %centered;
+
+  display: inline-flex;
+  justify-content: center;
 
   padding: 10px 28px;
 }
