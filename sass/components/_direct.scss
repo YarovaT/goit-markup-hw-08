@@ -1,8 +1,6 @@
 // Секция Основные направления
 
 .direct-list {
-  @extend %list;
-
   display: flex;
 
   &__title {

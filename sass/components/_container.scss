@@ -27,15 +27,18 @@
 }
 
 .menu-container {
-  background-color: $primary-background-color;
-  padding: 48px 40px;
-
   @media screen and (min-width: $mobile) {
-    display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
+
+    padding: 48px 40px;
+
     width: 100%;
+
+    background-color: $primary-background-color;
+
+    // display: none;
   }
 
   &.is-open {

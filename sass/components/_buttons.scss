@@ -37,7 +37,6 @@
 }
 
 .select-buttons {
-  @extend %list;
   @extend %centered;
 
   margin-bottom: 50px;
