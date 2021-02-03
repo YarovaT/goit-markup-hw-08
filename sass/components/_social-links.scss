@@ -1,15 +1,15 @@
 .social-links {
   @extend %list;
+  @extend %centered;
+  padding-bottom: 24px;
 
-  display: flex;
+  // justify-content: space-between;
 
-  justify-content: space-between;
-
-  &--centering {
-    margin-right: 32px;
-    margin-bottom: 30px;
-    margin-left: 32px;
-  }
+  // &--centering {
+  //   // margin-right: 32px;
+  //   // margin-bottom: 30px;
+  //   // margin-left: 32px;
+  // }
 
   &__name {
     @extend %centered;

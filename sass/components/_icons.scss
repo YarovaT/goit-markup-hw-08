@@ -2,6 +2,14 @@
   @extend %icon;
 }
 
+.icon-close {
+  @extend %icon;
+}
+
+.icon-menu {
+  @extend %icon;
+}
+
 .modal__icon-check {
   @include animation(transform);
 

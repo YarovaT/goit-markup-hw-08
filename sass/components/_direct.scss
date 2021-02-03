@@ -5,6 +5,14 @@
 
   display: flex;
 
+  &__title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
   &__item {
     position: relative;
 

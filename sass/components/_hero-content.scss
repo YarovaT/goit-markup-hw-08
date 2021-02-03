@@ -26,7 +26,12 @@
 }
 
 .hero-content {
-  max-width: 60%;
-  margin: 0 auto;
+  // max-width: 60%;
+  // margin: 0 auto;
   text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }

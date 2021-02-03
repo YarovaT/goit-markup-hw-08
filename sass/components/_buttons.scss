@@ -70,3 +70,38 @@
 
   cursor: pointer;
 }
+
+.menu__button {
+  @extend %centered;
+
+  margin: 0;
+  padding: 0;
+  min-width: 40px;
+  min-height: 40px;
+
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .menu-button {
+//     display: none;
+//   }
+// }
+
+.menu__button .icon-close {
+  display: none;
+}
+
+.menu__button.is-open .icon-close {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}

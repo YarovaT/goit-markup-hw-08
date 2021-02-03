@@ -25,3 +25,20 @@
     width: $desktop;
   }
 }
+
+.menu-container {
+  background-color: $primary-background-color;
+  padding: 48px 40px;
+
+  @media screen and (min-width: $mobile) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
