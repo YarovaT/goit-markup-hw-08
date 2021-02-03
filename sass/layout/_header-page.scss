@@ -1,5 +1,17 @@
 // Шапка сайта
 
 .header-page {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
+}
+
+// Основная навигация сайта
+
+.site-nav {
+  @extend %centered;
+
+  min-height: 60px;
+
+  justify-content: space-between;
 }
