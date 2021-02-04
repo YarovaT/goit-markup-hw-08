@@ -22,18 +22,18 @@ img {
     padding: 60px 0px;
   }
 
-  // &--top__zero {
-  //   padding-top: 0;
-  // }
-
   &--theme__light {
     background-color: $secondary-background-color;
   }
 
   &-direct {
     @media screen and (min-width: $mobile) {
-      // padding: 0px;
       display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+      padding: 0px;
     }
   }
 }

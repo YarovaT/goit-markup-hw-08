@@ -4,7 +4,7 @@
   // margin-left: auto;
   // display: flex;
 
-  &__item {
+  &-item {
     font-weight: $primary-font-weight;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
@@ -36,6 +36,7 @@
       line-height: 1.18;
       color: $accent-color;
     }
+
     &-mail {
       font-size: 24px;
       line-height: 1.17;

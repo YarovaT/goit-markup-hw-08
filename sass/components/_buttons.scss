@@ -96,11 +96,11 @@
 //   }
 // }
 
-.menu__button .icon-close {
+.menu__button .modal__close-icon {
   display: none;
 }
 
-.menu__button.is-open .icon-close {
+.menu__button.is-open .modal__close-icon {
   display: block;
 }
 
