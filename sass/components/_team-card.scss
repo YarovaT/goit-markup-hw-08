@@ -27,6 +27,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
 
+    font-size: $secondary-font-size;
     font-weight: $primary-font-weight;
   }
 
@@ -36,7 +37,7 @@
     color: $secondary-text-color;
   }
 
-  &__img {
-    width: 100%;
-  }
+  // &__img {
+  //   width: 100%;
+  // }
 }

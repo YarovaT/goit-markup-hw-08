@@ -16,10 +16,12 @@ img {
 }
 
 .section {
-  padding: 94px 0px;
-
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile), (min-width: $tablet) {
     padding: 60px 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0px;
   }
 
   &--theme__light {
@@ -27,9 +29,7 @@ img {
   }
 
   &-direct {
-    @media screen and (min-width: $mobile) {
-      display: none;
-    }
+    display: none;
 
     @media screen and (min-width: $desktop) {
       display: block;
