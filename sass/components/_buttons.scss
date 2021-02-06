@@ -4,7 +4,6 @@
 
 .email-form__button {
   @extend %button;
-  // @extend %centered;
 
   display: inline-flex;
   justify-content: center;
@@ -20,6 +19,11 @@
     $primary-background-color,
     $accent-color
   );
+
+  display: block;
+
+  min-width: auto;
+  min-height: auto;
 
   padding: 6px 22px;
 
@@ -37,20 +41,43 @@
 }
 
 .select-buttons {
-  @extend %centered;
+  margin-bottom: 30px;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   &__item {
     margin-right: 8px;
 
-    &:last-child {
-      margin-right: 0;
+    @media screen and (min-width: $mobile) {
+      display: inline-block;
+      margin-bottom: 15px;
+
+      &:nth-child(n + 2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
 
-.modal__buttton {
+.modal__button {
   @extend %centered;
   @include scotch-button-theme(
     $accent-text-color,
