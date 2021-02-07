@@ -27,16 +27,16 @@
 .menu-container {
   @media screen and (min-width: $mobile) {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
 
     width: 100%;
-    min-height: 796px;
+    // min-height: 796px;
     padding: 48px 40px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 
     background-color: $primary-background-color;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),

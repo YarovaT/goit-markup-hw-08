@@ -101,13 +101,9 @@
 }
 
 .menu__button {
-  @extend %centered;
-
+  display: inline-flex;
   margin: 0;
   padding: 0;
-  min-width: 40px;
-  min-height: 40px;
-
   border: none;
   background-color: transparent;
 
