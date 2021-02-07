@@ -102,24 +102,24 @@
 }
 
 .menu__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  z-index: 15px;
+  @media screen and (min-width: $mobile) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 15px;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .menu-button {
-//     display: none;
-//   }
-// }
 
 .menu__button .modal__close-icon {
   display: none;
