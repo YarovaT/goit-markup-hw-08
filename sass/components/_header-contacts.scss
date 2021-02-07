@@ -1,6 +1,11 @@
 // Список Контактов
 
 .contact__list {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
   // margin-left: auto;
   // display: flex;
 

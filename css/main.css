@@ -456,11 +456,13 @@ img {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .nav-menu {
-    margin-bottom: 302px;
     -webkit-transition: opacity 250ms linear, visibility 250ms linear;
     transition: opacity 250ms linear, visibility 250ms linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   .nav-menu__item {
     margin-bottom: 32px;
@@ -533,20 +535,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-box {
-    -ms-flex-preferred-size: calc(100% / 2);
-        flex-basis: calc(100% / 2);
+    width: 50%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-boxes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    width: calc((50% - 45px) / 2);
   }
 }
 
@@ -574,12 +569,13 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .menu-container {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
+    min-height: 100vh;
     padding: 48px 40px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -589,7 +585,16 @@ img {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .email-form__button {
@@ -614,6 +619,7 @@ img {
   letter-spacing: 0.03em;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 
 .select-buttons__btn:hover {
@@ -714,6 +720,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 15px;
 }
 
 .menu__button:hover, .menu__button:focus {
@@ -788,6 +795,14 @@ img {
 
 .logo--footer-end {
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .contact__list {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .contact__list-item {
@@ -1236,10 +1251,6 @@ img {
 .grid__card {
   position: relative;
   overflow: hidden;
-}
-
-.grid__img {
-  width: 100%;
 }
 
 .project-link {

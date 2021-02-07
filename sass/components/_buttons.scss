@@ -32,6 +32,7 @@
   letter-spacing: 0.03em;
 
   box-shadow: none;
+  border: none;
 
   &:hover,
   &:focus {
@@ -106,6 +107,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 15px;
 
   &:hover,
   &:focus {

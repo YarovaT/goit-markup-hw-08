@@ -25,18 +25,15 @@
 }
 
 .menu-container {
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
 
     width: 100%;
-    // min-height: 796px;
-    padding: 48px 40px;
+    min-height: 100vh;
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+    padding: 48px 40px;
 
     background-color: $primary-background-color;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -46,6 +43,8 @@
   }
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
