@@ -2,21 +2,16 @@
 
 .header-page {
   border-bottom: 1px solid #ececec;
-
-  @media screen and (min-width: $mobile) {
-    position: relative;
-  }
+  position: relative;
 }
 
 // Основная навигация сайта
 
 .site-nav {
-  @media screen and (min-width: $mobile) {
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (min-width: $tablet) {
     min-height: 80px;

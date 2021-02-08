@@ -20,9 +20,7 @@ a {
 }
 
 .section {
-  @media screen and (min-width: $mobile), (min-width: $tablet) {
-    padding: 60px 0px;
-  }
+  padding: 60px 0px;
 
   @media screen and (min-width: $desktop) {
     padding: 94px 0px;

@@ -36,20 +36,19 @@
 
     font-size: $primary-font-size;
     text-transform: uppercase;
+    text-align: center;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      text-align: center;
+    @media screen and (max-width: $tablet) {
+      text-align: left;
     }
   }
 }
 
 .features-list__item {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: $desktop) {

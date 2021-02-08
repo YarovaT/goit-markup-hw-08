@@ -2,10 +2,9 @@
 
 .contact__list {
   @extend %list;
+  display: none;
 
-  @media screen and (min-width: $mobile) {
-    display: none;
-  }
+  
 
   @media screen and (min-width: $tablet) {
     display: block;

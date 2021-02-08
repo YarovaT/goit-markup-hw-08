@@ -33,15 +33,12 @@
   border-radius: 4px;
 
   overflow-y: scroll;
+  position: absolute;
+  top: 93px;
+  left: 15px;
 
-  @media screen and (min-width: $mobile) {
-    position: absolute;
-    top: 93px;
-    left: 15px;
-
-    max-width: 450px;
-    width: 100%;
-  }
+  max-width: 450px;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
     top: 50%;
@@ -125,7 +122,7 @@
     width: 100%;
     height: auto;
 
-    // outline: none;
+    outline: none;
 
     &--indent {
       padding-left: 42px;

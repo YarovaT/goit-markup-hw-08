@@ -1,12 +1,7 @@
-.icon {
-  @extend %icon;
-}
-
-.icon-close {
-  @extend %icon;
-}
-
-.icon-menu {
+.icon,
+.icon-close,
+.icon-menu,
+.modal__close-icon {
   @extend %icon;
 }
 
@@ -21,10 +16,6 @@
 
   border: 2px solid #2a2a2a;
   border-radius: 2px;
-}
-
-.modal__close-icon {
-  @extend %icon;
 }
 
 .icon-send {

@@ -56,14 +56,11 @@
 
   &__item {
     margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
 
-    @media screen and (min-width: $mobile) {
-      display: inline-block;
-      margin-bottom: 15px;
-
-      &:nth-child(n + 2) {
-        margin-bottom: 0;
-      }
+    &:nth-child(n + 2) {
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: $tablet) {
@@ -103,20 +100,18 @@
 }
 
 .menu__button {
-  @media screen and (min-width: $mobile) {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    z-index: 2;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 
   @media screen and (min-width: $tablet) {
