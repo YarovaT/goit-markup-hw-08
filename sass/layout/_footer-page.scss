@@ -5,14 +5,6 @@
   padding-bottom: 60px;
 
   background: $accent-background-color;
-
-  // @media screen and (min-width: $tablet) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-
-  //
-  // }
 }
 
 .footer-box {
@@ -27,12 +19,15 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 50%;
+    display: inline-block;
+    width: calc(100% / 2 - 80px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media screen and (min-width: $desktop) {
-    width: calc((50% - 45px) / 2);
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: calc((50% - 45px) / 2);
+  // }
 }
 
 // .footer-boxes {
@@ -42,3 +37,6 @@
 //     margin-bottom: 60px;
 //   }
 // }
+
+@media screen and (min-width: $tablet) {
+}

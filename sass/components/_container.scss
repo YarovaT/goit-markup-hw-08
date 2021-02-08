@@ -8,19 +8,19 @@
 
 @media screen and (min-width: $mobile) {
   .container {
-    width: $mobile;
+    max-width: $mobile;
   }
 }
 
 @media screen and (min-width: $tablet) {
   .container {
-    width: $tablet;
+    max-width: $tablet;
   }
 }
 
 @media screen and (min-width: $desktop) {
   .container {
-    width: $desktop;
+    max-width: $desktop;
   }
 }
 
@@ -50,5 +50,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
   }
 }

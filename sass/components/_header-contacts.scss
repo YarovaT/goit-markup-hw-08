@@ -18,6 +18,13 @@
 }
 
 .contact__list-item {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: flex-end;

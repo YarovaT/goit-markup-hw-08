@@ -109,7 +109,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
+
     cursor: pointer;
 
     &:hover,
@@ -129,7 +130,7 @@
 
 .menu__button.is-open .modal__close-icon {
   display: block;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menu__button.is-open .icon-menu {
