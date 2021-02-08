@@ -55,6 +55,10 @@
     height: 4px;
     background: $accent-color;
     border-radius: 2px;
+
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
   }
 }
 
@@ -91,8 +95,15 @@
 }
 
 .contacts-mail {
+  @include animation(color);
+
   font-size: 24px;
   line-height: 1.17;
 
   color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

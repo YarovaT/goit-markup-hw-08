@@ -87,6 +87,7 @@
     transparent
   );
   @include bordered(rgba(0, 0, 0, 0.1));
+  @include animation(color);
 
   position: absolute;
   top: 8px;
@@ -108,7 +109,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 15px;
+    z-index: 1;
     cursor: pointer;
 
     &:hover,
@@ -128,6 +129,7 @@
 
 .menu__button.is-open .modal__close-icon {
   display: block;
+  z-index: 2;
 }
 
 .menu__button.is-open .icon-menu {
