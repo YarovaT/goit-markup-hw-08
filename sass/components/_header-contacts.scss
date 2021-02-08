@@ -4,14 +4,14 @@
   @extend %list;
   display: none;
 
-  
-
   @media screen and (min-width: $tablet) {
     display: block;
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
   }
 }
@@ -25,9 +25,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin-bottom: 0;
 
     &:last-child {
       margin-left: 30px;
@@ -39,8 +37,8 @@
   @include animation(color);
 
   @media screen and (min-width: $desktop) {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   font-weight: $primary-font-weight;

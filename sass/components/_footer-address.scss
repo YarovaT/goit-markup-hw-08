@@ -8,6 +8,10 @@
   &__link {
     padding-bottom: 8px;
 
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 9px;
+    }
+
     &:nth-last-child(n) {
       padding-bottom: 0;
     }
@@ -19,5 +23,9 @@
 
   &__text {
     padding-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 9px;
+    }
   }
 }

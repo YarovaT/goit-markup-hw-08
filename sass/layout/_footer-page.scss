@@ -25,6 +25,13 @@
 
   @media screen and (min-width: $desktop) {
     width: calc((50% - 45px) / 2);
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 70px;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &:last-child {
       width: calc(50% - 15px);
@@ -32,15 +39,32 @@
   }
 }
 
-.footer-box .form {
+.footer-box .email-form {
   @media screen and (min-width: $tablet) {
     width: 100%;
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
+
 .footer-page .container {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-box .social-links {
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+    justify-content: start;
   }
 }

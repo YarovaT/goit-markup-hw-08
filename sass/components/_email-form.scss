@@ -1,9 +1,12 @@
 /* Форма подписки */
 
 .email-form {
-  // display: flex;
-  // align-items: flex-end;
-  // justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__label {
     font-weight: $secondary-font-weight;
@@ -31,6 +34,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     outline: none;
+
+    @media screen and (min-width: $desktop) {
+      min-width: 358px;
+      margin-bottom: 30px;
+    }
 
     &::placeholder {
       font-size: $secondary-font-size;

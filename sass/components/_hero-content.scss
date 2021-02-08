@@ -39,6 +39,7 @@
 @media screen and (min-width: $tablet) {
   .hero-section {
     width: 768px;
+    height: 50vh;
 
     background-image: linear-gradient(
         to right,
@@ -62,17 +63,43 @@
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .hero-section {
+    width: 1600px;
+    height: 100vh;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-1600.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/hero-3200@2x.jpg");
+    }
+  }
+}
+
 .hero-content {
   max-width: 360px;
-  margin-right: auto;
-  margin-left: auto;
+
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    // padding: 0 189px;
+    min-width: 50%;
   }
 
   @media screen and (min-width: $desktop) {
-    // padding: 0 235px;
+    min-width: 65%;
   }
 }
