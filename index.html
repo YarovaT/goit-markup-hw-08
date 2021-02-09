@@ -225,37 +225,72 @@
           <h2 class="direct-list__title">Чем мы занимаемся</h2>
           <ul class="direct-list">
             <li class="direct-list__item">
-              <img
-                class="direct-list__img"
-                src="./images/WorkofNout.jpg"
-                alt="Программст работает за своим рабочим столом"
-                width="370"
-                srcset="./images/WorkofNout-2x.jpg 2x"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/direct/WorkofNout-370.webp    1x,
+                    ./images/direct/WorkofNout-740@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="direct-list__img"
+                  srcset="
+                    ./images/direct/WorkofNout-370.jpg    1x,
+                    ./images/direct/WorkofNout-740@2x.jpg 2x
+                  "
+                  src="./images/direct/WorkofNout-370.jpg"
+                  alt="Программст работает за своим рабочим столом"
+                  width="370"
+                />
+              </picture>
+
               <p class="direct-list__label">Десктопные приложения</p>
             </li>
 
             <li class="direct-list__item">
-              <img
-                class="direct-list__img"
-                src="./images/WorkofTel.jpg"
-                alt="Создатели
+              <picture>
+                <source
+                  srcset="
+                    ./images/direct/WorkofTel-370.webp    1x,
+                    ./images/direct/WorkofTel-740@2x.webp 2x
+                  " />
+                <img
+                  class="direct-list__img"
+                  srcset="
+                    ./images/direct/WorkofTel-370.jpg    1x,
+                    ./images/direct/WorkofTel-740@2x.jpg 2x
+                  "
+                  src="./images/direct/WorkofTel-370.jpg"
+                  alt="Создатели
                 работают в интерфейсе мобильного телефона"
-                width="370"
-                srcset="./images/WorkofTel-2x.jpg 2x"
-              />
+                  width="370"
+              /></picture>
+
               <p class="direct-list__label">Мобильные приложения</p>
             </li>
 
             <li class="direct-list__item">
-              <img
-                class="direct-list__img"
-                src="./images/WorkofIpad.jpg"
-                alt="Дизайнер
+              <picture>
+                <source
+                  srcset="
+                    ./images/direct/WorkofIpad-370.webp    1x,
+                    ./images/direct/WorkofIpad-740@2x.webp 2x
+                  "
+                />
+                <img
+                  class="direct-list__img"
+                  srcset="
+                    ./images/direct/WorkofIpad-370.jpg    1x,
+                    ./images/direct/WorkofIpad-740@2x.jpg 2x
+                  "
+                  src="./images/direct/WorkofIpad-370.jpg"
+                  alt="Дизайнер
                 работает с графиком выбора цвета на планшете"
-                width="370"
-                srcset="./images/WorkofIpad-2x.jpg 2x"
-              />
+                  width="370"
+                />
+              </picture>
+
               <p class="direct-list__label">Дизайнерские решения</p>
             </li>
           </ul>
