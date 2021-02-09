@@ -1,9 +1,6 @@
 // Присоединяйтесь
 
 .footer-box {
-  // margin-top: 5px;
-  // margin-left: 70px;
-
   &__text {
     margin-bottom: 20px;
 
@@ -11,8 +8,4 @@
     color: $primary-background-color;
     text-transform: uppercase;
   }
-
-  // &--indent {
-  //   margin-left: auto;
-  // }
 }

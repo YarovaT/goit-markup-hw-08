@@ -254,7 +254,8 @@
                   srcset="
                     ./images/direct/WorkofTel-370.webp    1x,
                     ./images/direct/WorkofTel-740@2x.webp 2x
-                  " />
+                  "
+                  type="image/webp" />
                 <img
                   class="direct-list__img"
                   srcset="
@@ -277,6 +278,7 @@
                     ./images/direct/WorkofIpad-370.webp    1x,
                     ./images/direct/WorkofIpad-740@2x.webp 2x
                   "
+                  type="image/webp"
                 />
                 <img
                   class="direct-list__img"
@@ -306,30 +308,57 @@
             <div class="team-card">
               <picture>
                 <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/ProductDes/ProductDes-270.webp    1x,
-                    ./images/ProductDes/ProductDes-540@2x.webp 2x,
+                    ./images/ProductDes/ProductDes-540@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/ProductDes/ProductDes-354.webp    1x,
-                    ./images/ProductDes/ProductDes-708@2x.webp 2x,
+                    ./images/ProductDes/ProductDes-708@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
                     ./images/ProductDes/ProductDes-450.webp    1x,
                     ./images/ProductDes/ProductDes-900@2x.webp 2x
                   "
                   type="image/webp"
                 />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/ProductDes/ProductDes-270.jpg    1x,
+                    ./images/ProductDes/ProductDes-540@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ProductDes/ProductDes-354.jpg    1x,
+                    ./images/ProductDes/ProductDes-708@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ProductDes/ProductDes-450.jpgb   1x,
+                    ./images/ProductDes/ProductDes-900@2x.jpg 2x
+                  "
+                />
 
                 <img
                   class="team-card__img"
-                  srcset="
-                    ./images/ProductDes/ProductDes-270.jpg    1x,
-                    ./images/ProductDes/ProductDes-540@2x.jpg 2x,
-                    ./images/ProductDes/ProductDes-354.jpg    1x,
-                    ./images/ProductDes/ProductDes-708@2x.jpg 2x,
-                    ./images/ProductDes/ProductDes-450.jpg    1x,
-                    ./images/ProductDes/ProductDes-900@2x.jpg 2x
-                  "
                   src="./images/ProductDes/ProductDes-270.jpg"
                   alt="Фото мужчины дизайнера проекта"
-                  width="270"
                 />
               </picture>
 
@@ -376,30 +405,55 @@
             <div class="team-card">
               <picture>
                 <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/FrontenedDev/FrontenedDev-270.webp    1x,
-                    ./images/FrontenedDev/FrontenedDev-540@2x.webp 2x,
+                    ./images/FrontenedDev/FrontenedDev-540@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/FrontenedDev/FrontenedDev-354.webp    1x,
-                    ./images/FrontenedDev/FrontenedDev-708@2x.webp 2x,
+                    ./images/FrontenedDev/FrontenedDev-708@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
                     ./images/FrontenedDev/FrontenedDev-450.webp    1x,
                     ./images/FrontenedDev/FrontenedDev-900@2x.webp 2x
                   "
                   type="image/webp"
                 />
-
-                <img
-                  class="team-card__img"
+                <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/FrontenedDev/FrontenedDev-270.jpg    1x,
-                    ./images/FrontenedDev/FrontenedDev-540@2x.jpg 2x,
+                    ./images/FrontenedDev/FrontenedDev-540@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/FrontenedDev/FrontenedDev-354.jpg    1x,
-                    ./images/FrontenedDev/FrontenedDev-708@2x.jpg 2x,
+                    ./images/FrontenedDev/FrontenedDev-708@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
                     ./images/FrontenedDev/FrontenedDev-450.jpg    1x,
                     ./images/FrontenedDev/FrontenedDev-900@2x.jpg 2x
                   "
+                />
+
+                <img
+                  class="team-card__img"
                   src="./images/FrontenedDev/FrontenedDev-270.jpg"
                   alt="Фото женщины разработчика"
-                  width="270"
                 />
               </picture>
 
@@ -447,30 +501,55 @@
             <div class="team-card">
               <picture>
                 <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/Marketing/Marketing-270.webp    1x,
-                    ./images/Marketing/Marketing-540@2x.webp 2x,
+                    ./images/Marketing/Marketing-540@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/Marketing/Marketing-354.webp    1x,
-                    ./images/Marketing/Marketing-708@2x.webp 2x,
-                    ./images/Marketing/Marketing-450.webp    1x,
+                    ./images/Marketing/Marketing-708@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    /images/Marketing/Marketing-450.webp     1x,
                     ./images/Marketing/Marketing-900@2x.webp 2x
                   "
                   type="image/webp"
                 />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Marketing/Marketing-270.jpg    1x,
+                    ./images/Marketing/Marketing-540@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Marketing/Marketing-354.jpg    1x,
+                    ./images/Marketing/Marketing-708@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    /images/Marketing/Marketing-450.jpg     1x,
+                    ./images/Marketing/Marketing-900@2x.jpg 2x
+                  "
+                />
 
                 <img
                   class="team-card__img"
-                  srcset="
-                    ./images/Marketing/Marketing-270.jpg    1x,
-                    ./images/Marketing/Marketing-540@2x.jpg 2x,
-                    ./images/Marketing/Marketing-354.jpg    1x,
-                    ./images/Marketing/Marketing-708@2x.jpg 2x,
-                    ./images/Marketing/Marketing-450.jpg    1x,
-                    ./images/Marketing/Marketing-900@2x.jpg 2x
-                  "
                   src="./images/Marketing/Marketing-270.jpg "
                   alt="Фото мужчины маркетолога"
-                  width="270"
                 />
               </picture>
 
@@ -518,30 +597,59 @@
             <div class="team-card">
               <picture>
                 <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/Desiner/Desiner-270.webp    1x,
-                    ./images/Desiner/Desiner-540@2x.webp 2x,
+                    ./images/Desiner/Desiner-540@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/Desiner/Desiner-354.webp    1x,
-                    ./images/Desiner/Desiner-708@2x.webp 2x,
+                    ./images/Desiner/Desiner-708@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
                     ./images/Desiner/Desiner-450.webp    1x,
                     ./images/Desiner/Desiner-900@2x.webp 2x
                   "
                   type="image/webp"
                 />
-
-                <img
-                  class="team-card__img"
+                <source
+                  media="(min-width: 480px)"
                   srcset="
                     ./images/Desiner/Desiner-270.jpg    1x,
-                    ./images/Desiner/Desiner-540@2x.jpg 2x,
+                    ./images/Desiner/Desiner-540@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
                     ./images/Desiner/Desiner-354.jpg    1x,
-                    ./images/Desiner/Desiner-708@2x.jpg 2x,
+                    ./images/Desiner/Desiner-708@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
                     ./images/Desiner/Desiner-450.jpg    1x,
                     ./images/Desiner/Desiner-900@2x.jpg 2x
                   "
+                />
+
+                <img
+                  class="team-card__img"
                   src=" ./images/Desiner/Desiner-270.jpg"
                   alt="Фото мужчины дизайнера проекта"
-                  width="270"
                 />
               </picture>
 
