@@ -258,7 +258,7 @@ summary {
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
@@ -269,7 +269,7 @@ summary {
 
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
@@ -280,7 +280,7 @@ summary {
 
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto-v20-latin_cyrillic-700.eot");
@@ -291,7 +291,7 @@ summary {
 
 /* roboto-900 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
@@ -302,7 +302,7 @@ summary {
 
 /* raleway-regular - latin_cyrillic */
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/raleway-v19-latin_cyrillic-regular.eot");
@@ -313,7 +313,7 @@ summary {
 
 /* raleway-700 - latin_cyrillic */
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/raleway-v19-latin_cyrillic-700.eot");
