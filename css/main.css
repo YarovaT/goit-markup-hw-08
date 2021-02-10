@@ -258,7 +258,7 @@ summary {
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
@@ -269,7 +269,7 @@ summary {
 
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
@@ -280,7 +280,7 @@ summary {
 
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto-v20-latin_cyrillic-700.eot");
@@ -291,7 +291,7 @@ summary {
 
 /* roboto-900 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
@@ -302,7 +302,7 @@ summary {
 
 /* raleway-regular - latin_cyrillic */
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/raleway-v19-latin_cyrillic-regular.eot");
@@ -313,7 +313,7 @@ summary {
 
 /* raleway-700 - latin_cyrillic */
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/raleway-v19-latin_cyrillic-700.eot");
@@ -446,6 +446,7 @@ a {
 @media screen and (min-width: 1200px) {
   .section-direct {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -1089,7 +1090,7 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .features-list__title {
     text-align: left;
   }
@@ -1168,6 +1169,7 @@ a {
             justify-content: space-between;
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1188,6 +1190,12 @@ a {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .team-card:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
