@@ -1662,7 +1662,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 45%;
+    max-width: 528px;
+    width: 100%;
   }
 }
 
