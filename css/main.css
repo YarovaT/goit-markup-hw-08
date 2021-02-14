@@ -265,6 +265,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* roboto-500 - latin_cyrillic */
@@ -276,6 +277,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* roboto-700 - latin_cyrillic */
@@ -287,6 +289,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* roboto-900 - latin_cyrillic */
@@ -298,6 +301,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* raleway-regular - latin_cyrillic */
@@ -309,6 +313,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/raleway-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/raleway-v19-latin_cyrillic-regular.svg#Raleway") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* raleway-700 - latin_cyrillic */
@@ -320,6 +325,7 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/raleway-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v19-latin_cyrillic-700.svg#Raleway") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 .nav-menu, .contact__list {
@@ -680,6 +686,7 @@ a {
   left: 0;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1252,6 +1259,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   font-size: 18px;
   font-weight: 500;
@@ -1635,9 +1644,9 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 93px;
-  left: 15px;
-  max-width: 450px;
+  top: 10%;
+  left: 0;
+  max-width: 100vw;
   width: 100%;
 }
 
@@ -1645,6 +1654,7 @@ a {
   .modal {
     top: 50%;
     left: 50%;
+    width: 60%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -1652,8 +1662,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    width: 100%;
+    width: 45%;
   }
 }
 
